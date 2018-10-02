@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Keyboard_Controller</title>
+</head>
+<body>
+
+	<div id="field" style="border:1px solid black; width: 150px; height: 150px; margin: 5px;">
+		<div id="hero" style="background-color: green; width: 25px; height: 25px; margin-left: 63px; margin-top: 59px;"></div>
+	</div>
+
+	<div style="margin-bottom: 5px;">
+		<input id="action-to-enable" type="text" name="">
+		<input type="button" name="" value="enable action" onclick="controller.enableAction(getElementById('action-to-enable').value)">
+	</div>
+
+	<div style="margin-bottom: 5px;">
+		<input id="action-to-disable" type="text" name="">
+		<input type="button" name="" value="disable action" onclick="controller.disableAction(getElementById('action-to-disable').value)">
+	</div>
+
+	<input type="button" name="" value="bind extra actions" onclick="controller.bindActions(extraActions)">
+
+	<script type="text/javascript", src="keyboard-controller.js"></script>
+	<script type="text/javascript", src="keyboard-controller-test.js"></script>
+	<!-- <script type="text/javascript", src="test.js"></script> -->
+
+</body>
